@@ -23,6 +23,10 @@ for profile in soup.findAll('div', {'class':'profile-content'}):
         richowner = name.div.text
     print(richnames + ': ' + richowner)
 
+    for info in soup.findAll('div', {'class':'profile-info'}):
+        worth = soup.find('div', {'class':'profile-info__item-value'}).text
+        print('Net Worth: ' + worth)
+
     # for info in soup.findAll('div', {'class':'profile-info'}): these lines are returning a 'NoneType' object has no attribute 'text' error...
     #     worth = soup.find('div', {'class':'profile-info__item-value'})
     #     net_worth = worth.div.text
