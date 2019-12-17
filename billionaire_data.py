@@ -16,7 +16,6 @@ soup = make_soup('https://www.forbes.com/profile/sheldon-adelson/?list=billionai
 
 
 for profile in soup.findAll('div', {'class':'profile-content'}):
-    # rank = soup.find('div', {'class':'profile-heading--desktop'})
 
     for name in soup.findAll('div', {'class':'profile-heading--desktop'}):
         richnames = name.h1.text
@@ -27,7 +26,13 @@ for profile in soup.findAll('div', {'class':'profile-content'}):
         worth = soup.find('div', {'class':'profile-info__item-value'}).text
         print('Net Worth: ' + worth)
 
-    # for info in soup.findAll('div', {'class':'profile-info'}): these lines are returning a 'NoneType' object has no attribute 'text' error...
-    #     worth = soup.find('div', {'class':'profile-info__item-value'})
-    #     net_worth = worth.div.text
-    # print(net_worth)
+    for stats in soup.findAll('div', {'class':'profile-stats__item'}):
+        print(stats.text)
+
+    # for profile_stats in soup.findAll('span', {'class':'profile-stats__title'}):
+    #     print(profile_stats.text)
+
+
+    # profile_stats = soup.find('div', {'class':'profile-stats__item'}).text
+    # print(profile_stats)
+
