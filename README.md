@@ -9,7 +9,7 @@ Requires Python 3.7 or higher & BeautifulSoup4.
 
 # TODO:
 * ~~Name~~
-* Real-Time Net Worth
+* ~~Real-Time Net Worth~~
 * Philanthrophy Score
 * Lifetime Giving 
 * Residence
