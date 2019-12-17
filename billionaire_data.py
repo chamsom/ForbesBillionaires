@@ -1,5 +1,6 @@
 import urllib
 import urllib.request
+import csv
 from bs4 import BeautifulSoup
 
 
@@ -11,9 +12,6 @@ def make_soup(url):
 soup = make_soup('https://www.forbes.com/profile/sheldon-adelson/?list=billionaires#d4342084a224')
 # for stats in soup.findAll('div', {'class':'profile-stats__item'}): testing purposes ignore line
 #     print(stats.find('span').text)
-
-
-
 
 for profile in soup.findAll('div', {'class':'profile-content'}):
 
