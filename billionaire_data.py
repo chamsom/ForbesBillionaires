@@ -9,28 +9,17 @@ def make_soup(url):
 
 soup = make_soup('https://www.forbes.com/profile/sheldon-adelson/?list=billionaires#d4342084a224')
 
-for profile in soup.findAll('div', {'class': 'profile-content'}):
-
-    for name in soup.findAll('div', {'class': 'profile-heading--desktop'}):
-        richnames = name.h1.text
-        richowner = name.div.text
-    print(richnames + ': ' + richowner)
-
-    for info in soup.findAll('div', {'class': 'profile-info'}):
-        worth = soup.find('div', {'class': 'profile-info__item-value'}).text
-        print('Net Worth: ' + worth)
-
 with open('Forbes.csv', 'w') as r:
     for profile in soup.findAll('div', {'class': 'profile-content'}):
 
         for name in soup.findAll('div', {'class': 'profile-heading--desktop'}):
             richnames = name.h1.text
             richowner = name.div.text
-        r.write(richnames + ': ' + richowner + '\n')
+        r.write(richnames + ',' + richowner + '\n')
 
         for info in soup.findAll('div', {'class': 'profile-info'}):
             worth = soup.find('div', {'class': 'profile-info__item-value'}).text
-        r.write('Net Worth: ' + worth + '\n')
+        r.write('Net Worth' + ',' + worth + '\n')
 
         for stats in soup.findAll('div', {'class': 'profile-stats'}):
 
