@@ -10,8 +10,8 @@ Requires Python 3.7 or higher & BeautifulSoup4.
 # TODO:
 * ~~Name~~
 * ~~Real-Time Net Worth~~
-* Philanthrophy Score
-* Lifetime Giving 
-* Residence
-* Scrape data for all Forbes US billionaires
-* ~~Export as .csv~~ Some formatting issues to sort still.
+* ~~Philanthrophy Score~~
+* ~~Lifetime Giving~~ 
+* ~~Residence~~
+* Automate & scrape data for all Forbes US billionaires
+* ~~Export as .csv~~ ~~Some formatting issues to sort still.~~
