@@ -1,6 +1,16 @@
 import urllib
 import urllib.request
 from bs4 import BeautifulSoup
+import requests
+
+headers = {
+    'User-Agent': 'chamsom' + 'anranwang4',
+    'From': 'https://github.com/chamsom' + 'https://github.com/anranwang4'
+}
+
+url = 'https://github.com/chamsom' + 'https://github.com/anranwang4'
+
+page = requests.get(url, headers = headers)
 
 def make_soup(url):
     forbes = urllib.request.urlopen(url)
