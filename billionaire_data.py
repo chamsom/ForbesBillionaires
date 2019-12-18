@@ -42,10 +42,16 @@ with open('Forbes.csv', 'w') as r:
         for stats in soup.findAll('div', {'class': 'profile-stats'}):
 
             for title in soup.findAll('span', {'class': 'profile-stats__title'}):
-                r.write(title.text + ': ' + '\n')
+                new_title = title.text
+                r.write(new_title + '\n')
 
-            # for p in soup.findAll('span', {'class': 'profile-stats__text'}):
-            #     r.write(p.text)
+            # for p in soup.findAll('span', {'class': 'profile-stats__text'}): uncomment line to see why it gets a bit strange here for the second column
+            #     new_p = p.text
+            #     r.write(new_p)
+
+
+
+
 
 
 
