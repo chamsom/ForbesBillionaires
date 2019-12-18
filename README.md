@@ -14,4 +14,4 @@ Requires Python 3.7 or higher & BeautifulSoup4.
 * Lifetime Giving 
 * Residence
 * Scrape data for all Forbes US billionaires
-* Export as .csv
+* ~~Export as .csv~~ Some formatting issues to sort still.
