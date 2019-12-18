@@ -38,7 +38,7 @@ with open('Forbes.csv', 'w') as r:
             title_info = soup.find_all(attrs={'class': "profile-stats__text"})
 
             for title, title_info in zip(title, title_info): # who knew that zip would come in clutch from Dr. Putonti?
-                r.write(title.getText() + ': ' + title_info.getText() + '\n')
+                r.write(title.getText() + ',' + title_info.getText() + '\n')
 
             # for title in soup.findAll('span', {'class': 'profile-stats__title'}): DISCONTINUED LOOPS SINCE THIS BEHAVES LIKE GARBO
             #     new_title = title.text
