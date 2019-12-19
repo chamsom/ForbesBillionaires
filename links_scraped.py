@@ -24,7 +24,8 @@ def make_soup(url):
 soup = make_soup('https://www.forbes.com/profile/sheldon-adelson/?list=billionaires#d4342084a224')
 for link in soup.findAll(attrs = {'class': 'profile-nav__next'}):
     page_url = 'forbes.com'
-    print(page_url + link.get('href'))
+    print('String to append: ' + link.get('href'))
+    print('Link generated: ' + page_url + link.get('href'))
 
 # link = soup.find(attrs = {'class': 'profile-nav__next'})
 # print(link.get('href'))
