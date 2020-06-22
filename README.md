@@ -13,5 +13,5 @@ Requires Python 3.7 or higher & BeautifulSoup4.
 * ~~Philanthrophy Score~~
 * ~~Lifetime Giving~~ 
 * ~~Residence~~
-* Automate & scrape data for all Forbes US billionaires
 * ~~Export as .csv~~ ~~Some formatting issues to sort still.~~
+
